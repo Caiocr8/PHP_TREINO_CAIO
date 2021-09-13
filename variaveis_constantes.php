@@ -10,8 +10,7 @@
     <?php
 
         define('BD_URL', 'endereço_bd_dev');
-       
-        
+        define('BD_NAME' , 'name_bd_dev');
     ?>
 </body>
 </html>
