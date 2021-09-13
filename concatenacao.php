@@ -21,6 +21,7 @@
         echo "<br/>";
         
         echo "Olá $nome , Verífiquei aqui que sua cor favorita é o $cor vi também que sua idade é de $idade anos e você adora $atividade_preferida";
+        echo "Olá $nome , Verífiquei aqui que sua cor favorita é o $cor vi também que sua idade é de $idade anos e você adora $atividade_preferida";
     ?>
 </body>
 </html>
