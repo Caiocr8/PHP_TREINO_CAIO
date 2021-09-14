@@ -11,6 +11,13 @@
 
         define('BD_URL', 'endereço_bd_dev');
         define('BD_NAME' , 'name_bd_dev');
+        define('BD_SENHA', 'senha_dev');
+
+        // .. Lógica .. //
+
+        echo BD_URL . '<br />';
+        echo BD_NAME . '<br />';
+        echo BD_SENHA . '<br />';
     ?>
 </body>
 </html>
