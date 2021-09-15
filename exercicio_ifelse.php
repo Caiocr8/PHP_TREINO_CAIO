@@ -22,11 +22,23 @@
         </ul>
     </h3>  
     
-    <?php
-        $calculo = 4;
+    <script>
+        function calcularFatores(number1, number2) {
+           let fator = number1 + number2
+           console.log(fator)
+           return
+        }
 
-        $number1 = 3;
-        $number2 = 3;
+        calcularFatores(9,6)
+    </script>
+    
+
+    
+    <?php
+        $calculo = 3;
+        $number1 = 9;
+        $number2 = 21;
+
 
         if($calculo == 1) {
             $calculo = "SOMA";
