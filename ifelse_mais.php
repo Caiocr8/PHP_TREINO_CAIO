@@ -8,6 +8,7 @@
     <link href="css/if.css" rel="stylesheet">
 </head>
 <body>
+    <p>oi</p>
     <?php        
         $user_get_card = true;
         $purchase_value = 450;
