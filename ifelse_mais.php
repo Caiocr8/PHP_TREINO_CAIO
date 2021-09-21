@@ -8,7 +8,6 @@
     <link href="css/if.css" rel="stylesheet">
 </head>
 <body>
-
     <?php
         
         $user_get_card = true;
@@ -17,14 +16,14 @@
         $fare_value = 50;
         $take_discount = false;
 
+        $amount_value = $purchase_value + $fare_value;
+
         if($user_get_card == true && $purchase_value >= 100) {
             $fare_value = 0;
             $take_discount = true;
         } 
     ?>
-
     <h1>DETALHES DO PEDIDO</h1>
-
     <p>Possui cartão da loja?
         <?php
             if($user_get_card == true) {
@@ -33,10 +32,8 @@
                 echo "NÃO";
             }
         ?>
-    </p>
-    
+    </p>   
     <p>Valor da compra: <?= $purchase_value?></p>        
-
     <p>Recebeu desconto no frete?
         <?php
             if($take_discount == true) {
@@ -46,6 +43,16 @@
             }
         ?>
     </p>
-<p>Valor do Frete: <?= $fare_value?></p>    
+    <p>Valor do Frete: <?= $fare_value?></p>   
+    <p>VALOR TOTAL: 
+        <?php
+            if($take_discount == true) {
+                $amount_value = $purchase_value;
+                echo $purchase_value;
+            } else {
+                echo $amount_value;
+            }
+        ?>
+    </p>
 </body>
 </html>
