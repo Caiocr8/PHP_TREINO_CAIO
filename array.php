@@ -23,6 +23,7 @@
         );
         $fruitListFull = array_merge($fruitList, $fruitList2);
         print_r($fruitListFull);
+
     ?>
 </body>
 </html>

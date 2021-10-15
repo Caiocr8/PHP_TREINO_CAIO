@@ -47,5 +47,7 @@
                 
             
     ?>
+
+    <script src="js/hello.js"></script>
 </body>
 </html>
